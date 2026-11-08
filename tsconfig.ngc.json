@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "outDir": "ngc-out", "declaration": true },
+  "angularCompilerOptions": { "compilationMode": "partial" }
+}
