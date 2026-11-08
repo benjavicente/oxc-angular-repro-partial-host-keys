@@ -1,3 +1,5 @@
 node_modules/
 dist/
+ngc-out/
+linked/
 package-lock.json

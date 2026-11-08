@@ -3,7 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "repro": "vite build && ngc -p tsconfig.ngc.json && node check.mjs"
+    "build:oxc": "vite build",
+    "build:ngc": "ngc -p tsconfig.ngc.json",
+    "link": "node link.mjs",
+    "repro": "npm run build:oxc && npm run build:ngc && npm run link && node check.mjs"
   },
   "devDependencies": {
     "@angular/compiler": "22.2.5",
